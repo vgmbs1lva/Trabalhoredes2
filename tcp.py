@@ -5,7 +5,7 @@ from tcputils import *
 
 
 class Servidor:
-    def __init__(self, rede, porta):
+    def _init_(self, rede, porta):
         self.rede = rede
         self.porta = porta
         self.conexoes = {}
@@ -76,7 +76,7 @@ class Servidor:
 
 
 class Conexao:
-    def __init__(self, servidor, id_conexao):
+    def _init_(self, servidor, id_conexao):
         self.servidor = servidor
         self.id_conexao = id_conexao
         self.n_ack = None
